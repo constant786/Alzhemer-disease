@@ -7,12 +7,12 @@ k2 = float(input("Value of k2:"))    # nucleation rate (S1^2)
 ds = float(input("Value of ds:"))     # microglial clearance of S1
 es = float(input("Value of es:"))      # CSF efflux of S1
 df = float(input("Value of df:"))    # microglial clearance of S2
-n = float(input("Value of k1:"))        # microglial density
+n = float(input("Value of n:"))        # microglial density
 
 # Circadian rhythm: production rate r(t)
 rw = float(input("Value of rw:"))     # rate during wake
 rs = float(input("Value of rs:"))      # rate during sleep
-T = float(input("Value of T"))         # circadian period (hours)
+T = float(input("Value of T:"))         # circadian period (hours)
 
 def r(t):
     # Cosine wave: peaks at t=0, trough at t=12
