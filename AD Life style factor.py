@@ -2,18 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 
-# Define parameters
-k1 = 0.1       # aggregation rate (S1 + S2)
-k2 = 0.05      # nucleation rate (S1^2)
-ds = 0.03      # microglial clearance of S1
-es = 0.01      # CSF efflux of S1
-df = 0.02      # microglial clearance of S2
-n = 1.0        # microglial density
+k1 = float(input("Value of k1:"))    # aggregation rate (S1 + S2)
+k2 = float(input("Value of k2:"))    # nucleation rate (S1^2)
+ds = float(input("Value of ds:"))     # microglial clearance of S1
+es = float(input("Value of es:"))      # CSF efflux of S1
+df = float(input("Value of df:"))    # microglial clearance of S2
+n = float(input("Value of k1:"))        # microglial density
 
 # Circadian rhythm: production rate r(t)
-rw = 0.5       # rate during wake
-rs = 0.1       # rate during sleep
-T = 24         # circadian period (hours)
+rw = float(input("Value of rw:"))     # rate during wake
+rs = float(input("Value of rs:"))      # rate during sleep
+T = float(input("Value of T"))         # circadian period (hours)
 
 def r(t):
     # Cosine wave: peaks at t=0, trough at t=12
