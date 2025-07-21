@@ -2,16 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 
-n= 500
+n=555   # no of itteration  , any thing from mind
 h=1
 k=0.08
 a=0.001
 r=0.02
 b=0.00002
 
-t=[0]
-R=[1000]
-W=[40]
+t = [0]
+R = [int(input("No of initial Prey: "))]
+W = [int(input("No of initial Predator: "))]
+
 
 for i in range(1,n+1):
     t.append(t[i-1]+h)
@@ -23,8 +24,8 @@ for i in range(1,n+1):
 plt.figure(figsize=(12,5))
 plt.plot(t,R,label="Rabbit",color="blue")
 plt.plot(t,W,label="Wolfs",color="orange")
-plt.xlabel("time")
-plt.ylabel("Nub of Animali")
+plt.xlabel("Time")
+plt.ylabel("Number of Animal")
 plt.title("Lotka _Voterra Method ")
 plt.legend()
 plt.grid(True)
